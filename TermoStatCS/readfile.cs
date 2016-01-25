@@ -41,8 +41,12 @@ namespace TermoStatCS
             }
             else {
                 sr = new StreamReader(FILE_NAME);
-                return "OK!";
+                return "Plik załadowano!";
             }
+        }
+        public void zamknij_plik()
+        {
+            sr.Close();
         }
         public wynik odczytaj(){
             wynik ODCZYT = new wynik();

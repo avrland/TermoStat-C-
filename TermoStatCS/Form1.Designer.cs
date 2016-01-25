@@ -50,6 +50,7 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -69,6 +70,7 @@
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabPage1.Controls.Add(this.progressBar1);
             this.tabPage1.Controls.Add(this.dateTimePicker2);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.label4);
@@ -132,7 +134,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(81, 444);
+            this.label2.Location = new System.Drawing.Point(65, 444);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 16);
             this.label2.TabIndex = 10;
@@ -172,6 +174,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(280, 20);
             this.textBox2.TabIndex = 6;
+            this.textBox2.Text = "http://vps.avrland.ovh/temp.log";
             // 
             // textBox1
             // 
@@ -188,6 +191,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Wyczyść";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -195,19 +199,19 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 23);
             this.button3.TabIndex = 3;
-            this.button3.Text = "3. Załaduj wykres";
+            this.button3.Text = "4. Załaduj wykres";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(310, 382);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "2. Pobierz logi";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -250,6 +254,14 @@
             this.openFileDialog1.CheckFileExists = false;
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(65, 441);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(159, 23);
+            this.progressBar1.TabIndex = 15;
+            this.progressBar1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,6 +300,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
