@@ -28,7 +28,7 @@ namespace TermoStatCS
             openFileDialog1.ShowDialog();
             strfilename = openFileDialog1.InitialDirectory + openFileDialog1.FileName;
             textBox1.Text = strfilename;
-            button1.Enabled = true; //odblokuj przycisk do pobrania logow;
+            button2.Enabled = true; //odblokuj przycisk do pobrania logow;
         }
 
         //funkcja pobierająca plik z serwera
@@ -55,6 +55,7 @@ namespace TermoStatCS
             progressBar1.Visible = false; //wygaś pasek postępu
             label2.Text = "Pobrano logi."; //powiadom, że pobrano logi
             label2.ForeColor = Color.Green;
+            button3.Enabled = true;
         }
 
         //wybór zakresu wyświetlanego wykresu (:d)

@@ -142,6 +142,7 @@
             // 
             // button5
             // 
+            this.button5.Enabled = false;
             this.button5.Location = new System.Drawing.Point(310, 412);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(120, 23);
@@ -182,6 +183,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(280, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "C:\\Users\\PC\\Desktop\\temp.log";
             // 
             // button4
             // 
@@ -195,6 +197,7 @@
             // 
             // button3
             // 
+            this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(310, 441);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 23);
@@ -205,6 +208,7 @@
             // 
             // button2
             // 
+            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(310, 382);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 23);
@@ -228,7 +232,7 @@
             this.chart1.BackColor = System.Drawing.Color.Transparent;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Location = new System.Drawing.Point(-46, 0);
+            this.chart1.Location = new System.Drawing.Point(-34, 0);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             series1.ChartArea = "ChartArea1";
@@ -236,7 +240,7 @@
             series1.Name = "Series1";
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1054, 347);
+            this.chart1.Size = new System.Drawing.Size(1027, 347);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
